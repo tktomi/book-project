@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>著者名:</strong>
+  <%= @book.author.name %>
+</p>
+
+<p>
+  <strong>出版社:</strong>
+  <%= @book.author.company.name %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
